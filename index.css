@@ -1,0 +1,455 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  background-color: #3c82d2;
+  background: radial-gradient(circle at 35% 20%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, p {
+  margin: 6px 0;
+}
+
+.card {
+  margin: 0 auto;
+  width: 500px;
+  height: 312px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation: 4s cubic-bezier(0.84, 0.11, 0.21, 0.89) 1s infinite flipping;
+}
+
+.card:hover .card-inner {
+  animation-play-state: paused;
+  backface-visibility: hidden;
+}
+
+@keyframes flipping {
+  0%, 80% {
+    transform: rotateY(0deg);
+  }
+  30%, 60% {
+    transform: rotateY(180deg);
+  }
+}
+
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  background: radial-gradient(circle at 65%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
+  overflow: hidden;
+}
+
+.card-front::after, .card-back::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 0 0 13px 13px;
+  background: radial-gradient(circle at 65% 0%, #17b796, #087742 30%, #0a3538 60%);
+  overflow: hidden;
+}
+
+.card-back {
+  background: radial-gradient(circle at 35%, #1caee2, #3c82d2 30%, #1c2d6a 60%);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.card-back::after {
+  background: radial-gradient(circle at 35% 0%, #17b796, #087742 30%, #0a3538 60%);
+}
+
+/* Card Front Design */
+
+.double-cash {
+  position: absolute;
+  top: 135px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 1;
+  z-index: 10;
+}
+
+.double-cash .double {
+  padding-left: 245px;
+  background: linear-gradient(90deg, #1c2d6a, #1dbbee 30%, #1c2d6a 70%);
+}
+
+.double-cash .cash {
+  padding-left: 342px;
+  background: linear-gradient(90deg, #0a3538 5%, #17b796 35%, #0a3538 70%);
+}
+
+.umbrella {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  width: 190px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.umbrella .arc {
+  border: #a8d9f8 18px solid;
+  border-radius: 50%;
+  opacity: 0.9;
+  width: 150px;
+  height: 150px;
+}
+
+/* card front parts */
+.issuer-logo {
+  position: relative;
+  width: 12%;
+  margin: 16px 24px;
+}
+
+.chip-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 29px 16px;
+
+}
+.chip-row .contactless {
+  width: 6%;
+  margin-right: 8px;
+}
+.chip-row .chip {
+  width: 15%;
+}
+
+.name-row {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 16px 24px;
+}
+.name-row .name {
+  font-size: 22px;
+}
+.name-row .card-type {
+  width: 22%;
+}
+
+/* card back parts */
+.card-back .upper-half {
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.upper-half .customer-service {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.upper-half .customer-service .exp-info {
+  font-size: 6px;
+}
+
+.upper-half .card-stripe {
+  width: 110%;
+  height: 55px;
+  margin-top: 8px;
+  margin-left: -16px;
+  background-color: #000000;
+}
+
+.upper-half .world-elite {
+  float: right;
+  margin: 18px 12px;
+}
+
+.card-back .lower-half {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.lower-half .card-numbers {
+  margin-top: 6px;
+  font-size: 26px;
+}
+
+.lower-half .exp-date {
+  font-size: 26px;
+}
+.lower-half .valid-thru {
+  display: inline-block;
+  width: 42px;
+  font-size: 10px;
+}
+
+.lower-half .name {
+  font-size: 18px;
+}
+
+.lower-half .signature-cvv-other {
+  width: 57%;
+}
+
+.lower-half .signature-cvv {
+  height: 42px;
+  background-color: #17b796;
+  font-size: 24px;
+  font-style: italic;
+}
+.lower-half .signature-cvv span {
+  float: right;
+  margin: 7px;
+  color: #000000;
+}
+
+.lower-half .other-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  font-size: 10px;
+}
+
+/* Utility */
+.z100 {
+  z-index: 100;
+}
+
+
+
+
+
+
+/* Circle and Arcs BEGINS */
+.arc-container {
+  position: absolute;
+  z-index: 2;
+}
+svg.circle {
+  transform-origin: center;
+}
+
+circle {
+  fill: transparent;
+  stroke-width: 2;
+  transform-origin: center;
+}
+
+.white-line {
+  stroke: #ffffff;
+  opacity: 0.5;
+}
+.line {
+  stroke: #639bd4;
+  opacity: 0.4;
+}
+
+.circle-1 {
+  top: 43px;
+  right: 57px;
+}
+.circle-1 .arc-12 {
+  transform: rotate(135deg);
+}
+.circle-1 .arc-13 {
+  transform: rotate(193deg);
+}
+.circle-1 .arc-14 {
+  transform: rotate(265deg);
+}
+.circle-1 .white-line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -510;
+  transform: rotate(-132deg);
+}
+.circle-1 .line-1 {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -531;
+  transform: rotate(-132deg);
+}
+.circle-1 .line-2 {
+  stroke-dasharray: 620;
+  stroke-dashoffset: -552;
+  transform: rotate(-132deg);
+}
+.circle-1 .line-3 {
+  stroke-dasharray: 640;
+  stroke-dashoffset: -573;
+  transform: rotate(-132deg);
+}
+
+.circle-2 {
+  top: 29px;
+  right: 42px;
+}
+.circle-2 .arc-21 {
+  transform: rotate(0deg);
+}
+.circle-2 .arc-22 {
+  transform: rotate(190deg);
+}
+.circle-2 .white-line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -600;
+  transform: rotate(-21deg);
+}
+.circle-2 .line-1 {
+  stroke-dasharray: 630;
+  stroke-dashoffset: -622;
+  transform: rotate(-21deg);
+}
+.circle-2 .line-2 {
+  stroke-dasharray: 650;
+  stroke-dashoffset: -644;
+  transform: rotate(-21deg);
+}
+.circle-2 .line-3 {
+  stroke-dasharray: 680;
+  stroke-dashoffset: -666;
+  transform: rotate(-21deg);
+}
+
+.circle-3 {
+  top: 15px;
+  right: 27px;
+}
+.circle-3 .arc-31 {
+  transform: rotate(-70deg);
+}
+.circle-3 .arc-32 {
+  transform: rotate(115deg);
+}
+.circle-3 .white-line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -580;
+  transform: rotate(-21deg);
+}
+.circle-3 .line-1 {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -600;
+  transform: rotate(-21deg);
+}
+.circle-3 .line-2 {
+  stroke-dasharray: 620;
+  stroke-dashoffset: -620;
+  transform: rotate(-21deg);
+}
+.circle-3 .line-3 {
+  stroke-dasharray: 640;
+  stroke-dashoffset: -640;
+  transform: rotate(-21deg);
+}
+
+.circle-4 {
+  top: 0;
+  right: 12px;
+}
+.circle-4 .arc-41 {
+  transform: rotate(-185deg);
+}
+.circle-4 .arc-42 {
+  transform: rotate(26deg);
+}
+.circle-4 .white-line {
+  stroke-dasharray: 800;
+  stroke-dashoffset: -750;
+  transform: rotate(-21deg);
+}
+.circle-4 .line-1 {
+  stroke-dasharray: 800;
+  stroke-dashoffset: -771;
+  transform: rotate(-21deg);
+}
+.circle-4 .line-2 {
+  stroke-dasharray: 820;
+  stroke-dashoffset: -792;
+  transform: rotate(-21deg);
+}
+.circle-4 .line-3 {
+  stroke-dasharray: 840;
+  stroke-dashoffset: -813;
+  transform: rotate(-21deg);
+}
+
+.circle-5 {
+  top: -15px;
+  right: -3px;
+}
+.circle-5 .arc-51 {
+  transform: rotate(-40deg);
+}
+.circle-5 .white-line {
+  stroke-dasharray: 900;
+  stroke-dashoffset: -800;
+  transform: rotate(-21deg);
+}
+.circle-5 .line-1 {
+  stroke-dasharray: 900;
+  stroke-dashoffset: -820;
+  transform: rotate(-21deg);
+}
+.circle-5 .line-2 {
+  stroke-dasharray: 920;
+  stroke-dashoffset: -840;
+  transform: rotate(-21deg);
+}
+.circle-5 .line-3 {
+  stroke-dasharray: 940;
+  stroke-dashoffset: -861;
+  transform: rotate(-21deg);
+}
+
+.circle-6 {
+  top: -45px;
+  right: -33px;
+}
+.circle-6 .arc-61 {
+  transform: rotate(-36deg);
+}
+.circle-6 .white-line {
+  stroke-dasharray: 900;
+  stroke-dashoffset: -800;
+  transform: rotate(-21deg);
+}
+.circle-6 .line-1 {
+  stroke-dasharray: 900;
+  stroke-dashoffset: -820;
+  transform: rotate(-21deg);
+}
+.circle-6 .line-2 {
+  stroke-dasharray: 920;
+  stroke-dashoffset: -840;
+  transform: rotate(-21deg);
+}
+.circle-6 .line-3 {
+  stroke-dasharray: 940;
+  stroke-dashoffset: -861;
+  transform: rotate(-21deg);
+}
+/* Circle and Arcs ENDS */
