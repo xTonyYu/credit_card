@@ -17,7 +17,7 @@ body {
 }
 
 h1, p {
-  margin: 6px auto;
+  margin: 56px auto;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ h1, p {
   height: 100%;
   transition: transform 0.5s;
   transform-style: preserve-3d;
-  animation: 4s cubic-bezier(0.84, 0.11, 0.21, 0.89) 1s infinite flipping;
+  animation: 4s cubic-bezier(0.84, 0.11, 0.21, 0.89) 2s infinite flipping;
 }
 
 .card:hover .card-inner {
