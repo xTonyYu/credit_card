@@ -34,13 +34,11 @@ h1, p {
   height: 100%;
   transition: transform 0.5s;
   transform-style: preserve-3d;
-  backface-visibility: hidden;
   animation: 4s cubic-bezier(0.84, 0.11, 0.21, 0.89) 1s infinite flipping;
 }
 
 .card:hover .card-inner {
   animation-play-state: paused;
-  backface-visibility: hidden;
 }
 
 @keyframes flipping {
@@ -60,8 +58,11 @@ h1, p {
   height: 100%;
   border-radius: 13px;
   background: radial-gradient(circle at 65%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
-  backface-visibility: hidden;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .card-front::after, .card-back::after {
@@ -78,7 +79,6 @@ h1, p {
 
 .card-back {
   background: radial-gradient(circle at 35%, #1caee2, #3c82d2 30%, #1c2d6a 60%);
-  backface-visibility: hidden;
   transform: rotateY(180deg);
 }
 .card-back::after {
@@ -152,6 +152,7 @@ h1, p {
   justify-content: space-between;
   align-items: baseline;
   width: -webkit-fill-available;
+  width: -moz-available;
   margin: 16px 24px;
 }
 .name-row .name {
