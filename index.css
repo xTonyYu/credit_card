@@ -255,7 +255,7 @@ h1, p {
 
 
 /* Circle and Arcs BEGINS */
-.arc-container {
+.arc-container, .circle {
   position: absolute;
   z-index: 2;
 }
@@ -280,7 +280,7 @@ circle {
 
 .circle-1 {
   top: 43px;
-  right: 57px;
+  left: 223px;
 }
 .circle-1 .arc-12 {
   transform: rotate(135deg);
@@ -291,22 +291,22 @@ circle {
 .circle-1 .arc-14 {
   transform: rotate(265deg);
 }
-.circle-1 .white-line {
+#circle_1 .white-line {
   stroke-dasharray: 600;
   stroke-dashoffset: -510;
   transform: rotate(-132deg);
 }
-.circle-1 .line-1 {
+#circle_1 .line-1 {
   stroke-dasharray: 600;
   stroke-dashoffset: -531;
   transform: rotate(-132deg);
 }
-.circle-1 .line-2 {
+#circle_1 .line-2 {
   stroke-dasharray: 620;
   stroke-dashoffset: -552;
   transform: rotate(-132deg);
 }
-.circle-1 .line-3 {
+#circle_1 .line-3 {
   stroke-dasharray: 640;
   stroke-dashoffset: -573;
   transform: rotate(-132deg);
@@ -314,7 +314,7 @@ circle {
 
 .circle-2 {
   top: 29px;
-  right: 42px;
+  left: 209px;
 }
 .circle-2 .arc-21 {
   transform: rotate(0deg);
@@ -322,22 +322,22 @@ circle {
 .circle-2 .arc-22 {
   transform: rotate(190deg);
 }
-.circle-2 .white-line {
+#circle_2 .white-line {
   stroke-dasharray: 600;
   stroke-dashoffset: -600;
   transform: rotate(-21deg);
 }
-.circle-2 .line-1 {
+#circle_2 .line-1 {
   stroke-dasharray: 630;
   stroke-dashoffset: -622;
   transform: rotate(-21deg);
 }
-.circle-2 .line-2 {
+#circle_2 .line-2 {
   stroke-dasharray: 650;
   stroke-dashoffset: -644;
   transform: rotate(-21deg);
 }
-.circle-2 .line-3 {
+#circle_2 .line-3 {
   stroke-dasharray: 680;
   stroke-dashoffset: -666;
   transform: rotate(-21deg);
@@ -345,7 +345,7 @@ circle {
 
 .circle-3 {
   top: 15px;
-  right: 27px;
+  left: 192px;
 }
 .circle-3 .arc-31 {
   transform: rotate(-70deg);
@@ -353,22 +353,22 @@ circle {
 .circle-3 .arc-32 {
   transform: rotate(115deg);
 }
-.circle-3 .white-line {
+#circle_3 .white-line {
   stroke-dasharray: 600;
   stroke-dashoffset: -580;
   transform: rotate(-21deg);
 }
-.circle-3 .line-1 {
+#circle_3 .line-1 {
   stroke-dasharray: 600;
   stroke-dashoffset: -600;
   transform: rotate(-21deg);
 }
-.circle-3 .line-2 {
+#circle_3 .line-2 {
   stroke-dasharray: 620;
   stroke-dashoffset: -620;
   transform: rotate(-21deg);
 }
-.circle-3 .line-3 {
+#circle_3 .line-3 {
   stroke-dasharray: 640;
   stroke-dashoffset: -640;
   transform: rotate(-21deg);
@@ -376,7 +376,7 @@ circle {
 
 .circle-4 {
   top: 0;
-  right: 12px;
+  left: 175px;
 }
 .circle-4 .arc-41 {
   transform: rotate(-185deg);
@@ -384,22 +384,22 @@ circle {
 .circle-4 .arc-42 {
   transform: rotate(26deg);
 }
-.circle-4 .white-line {
+#circle_4 .white-line {
   stroke-dasharray: 800;
   stroke-dashoffset: -750;
   transform: rotate(-21deg);
 }
-.circle-4 .line-1 {
+#circle_4 .line-1 {
   stroke-dasharray: 800;
   stroke-dashoffset: -771;
   transform: rotate(-21deg);
 }
-.circle-4 .line-2 {
+#circle_4 .line-2 {
   stroke-dasharray: 820;
   stroke-dashoffset: -792;
   transform: rotate(-21deg);
 }
-.circle-4 .line-3 {
+#circle_4 .line-3 {
   stroke-dasharray: 840;
   stroke-dashoffset: -813;
   transform: rotate(-21deg);
@@ -407,27 +407,27 @@ circle {
 
 .circle-5 {
   top: -15px;
-  right: -3px;
+  left: 161px;
 }
 .circle-5 .arc-51 {
   transform: rotate(-40deg);
 }
-.circle-5 .white-line {
+#circle_5 .white-line {
   stroke-dasharray: 900;
   stroke-dashoffset: -800;
   transform: rotate(-21deg);
 }
-.circle-5 .line-1 {
+#circle_5 .line-1 {
   stroke-dasharray: 900;
   stroke-dashoffset: -820;
   transform: rotate(-21deg);
 }
-.circle-5 .line-2 {
+#circle_5 .line-2 {
   stroke-dasharray: 920;
   stroke-dashoffset: -840;
   transform: rotate(-21deg);
 }
-.circle-5 .line-3 {
+#circle_5 .line-3 {
   stroke-dasharray: 940;
   stroke-dashoffset: -861;
   transform: rotate(-21deg);
@@ -435,27 +435,27 @@ circle {
 
 .circle-6 {
   top: -45px;
-  right: -33px;
+  left: 130px;
 }
 .circle-6 .arc-61 {
   transform: rotate(-36deg);
 }
-.circle-6 .white-line {
+#circle_6 .white-line {
   stroke-dasharray: 900;
   stroke-dashoffset: -800;
   transform: rotate(-21deg);
 }
-.circle-6 .line-1 {
+#circle_6 .line-1 {
   stroke-dasharray: 900;
   stroke-dashoffset: -820;
   transform: rotate(-21deg);
 }
-.circle-6 .line-2 {
+#circle_6 .line-2 {
   stroke-dasharray: 920;
   stroke-dashoffset: -840;
   transform: rotate(-21deg);
 }
-.circle-6 .line-3 {
+#circle_6 .line-3 {
   stroke-dasharray: 940;
   stroke-dashoffset: -861;
   transform: rotate(-21deg);
