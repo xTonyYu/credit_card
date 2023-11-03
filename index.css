@@ -17,14 +17,15 @@ body {
 }
 
 h1, p {
-  margin: 56px auto;
+  margin: 6px auto;
   text-align: center;
 }
 
 .card {
   margin: 0 auto;
-  width: 500px;
-  height: 312px;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 500 / 312;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -56,7 +57,7 @@ h1, p {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 13px;
+  border-radius: 3% / 5%;
   background: radial-gradient(circle at 65%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
@@ -72,7 +73,7 @@ h1, p {
   left: 0;
   width: 100%;
   height: 50%;
-  border-radius: 0 0 13px 13px;
+  border-radius: 0 0 3% / 5% 3% / 5%;
   background: radial-gradient(circle at 65% 0%, #17b796, #087742 30%, #0a3538 60%);
   overflow: hidden;
 }
@@ -87,9 +88,15 @@ h1, p {
 
 /* Card Front Design */
 
+.card-front-design {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .double-cash {
   position: absolute;
-  top: 135px;
+  top: 43.2%;
   width: 100%;
   font-size: 24px;
   line-height: 1;
@@ -97,45 +104,27 @@ h1, p {
 }
 
 .double-cash .double {
-  padding-left: 245px;
+  padding-left: 49%;
   background: linear-gradient(90deg, #1c2d6a, #1dbbee 30%, #1c2d6a 70%);
 }
 
 .double-cash .cash {
-  padding-left: 342px;
+  padding-left: 68.4%;
   background: linear-gradient(90deg, #0a3538 5%, #17b796 35%, #0a3538 70%);
-}
-
-.umbrella {
-  position: absolute;
-  top: 60px;
-  right: 70px;
-  width: 190px;
-  height: 40px;
-  overflow: hidden;
-}
-
-.umbrella .arc {
-  border: #a8d9f8 18px solid;
-  border-radius: 50%;
-  opacity: 0.9;
-  width: 150px;
-  height: 150px;
 }
 
 /* card front parts */
 .issuer-logo {
   position: relative;
   width: 12%;
-  margin: 16px 24px;
+  margin: 3.2% 4.8%;
 }
 
 .chip-row {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 29px 16px;
-
+  margin: 5.6% 3.2%;
 }
 .chip-row .contactless {
   width: 6%;
@@ -153,7 +142,7 @@ h1, p {
   align-items: baseline;
   width: -webkit-fill-available;
   width: -moz-available;
-  margin: 16px 24px;
+  margin: 3.2% 4.8%;
 }
 .name-row .name {
   font-size: 22px;
@@ -166,10 +155,11 @@ h1, p {
 .card-back .upper-half {
   box-sizing: border-box;
   position: absolute;
-  top: 2px;
+  top: 0.7%;
   left: 0;
   width: 100%;
-  padding: 0 16px;
+  height: 50%;
+  padding: 0 3.2%;
 }
 
 .upper-half .customer-service {
@@ -183,15 +173,15 @@ h1, p {
 
 .upper-half .card-stripe {
   width: 110%;
-  height: 55px;
-  margin-top: 8px;
-  margin-left: -16px;
+  height: 35.3%;
+  margin: 1.7% -3.5%;
   background-color: #000000;
 }
 
 .upper-half .world-elite {
   float: right;
-  margin: 18px 12px;
+  margin: 2.4% 2.5%;
+  font-size: 16px;
 }
 
 .card-back .lower-half {
@@ -200,11 +190,12 @@ h1, p {
   top: 50%;
   left: 0;
   width: 100%;
-  padding: 0 16px;
+  height: 50%;
+  padding: 0 3.2%;
 }
 
 .lower-half .card-numbers {
-  margin-top: 6px;
+  margin-top: 1.2%;
   font-size: 26px;
 }
 
@@ -223,24 +214,25 @@ h1, p {
 
 .lower-half .signature-cvv-other {
   width: 57%;
+  height: 40%;
 }
 
 .lower-half .signature-cvv {
-  height: 42px;
+  height: 67.4%;
   background-color: #17b796;
   font-size: 24px;
   font-style: italic;
 }
 .lower-half .signature-cvv span {
   float: right;
-  margin: 7px;
+  margin: 2.6%;
   color: #000000;
 }
 
 .lower-half .other-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 2px;
+  margin-top: 1%;
   font-size: 10px;
 }
 
@@ -249,18 +241,62 @@ h1, p {
   z-index: 100;
 }
 
+/* @media */
+@media (max-width: 500px) {
+  .double-cash {
+    font-size: 4.8vw;
+  }
+
+  .name-row .name {
+    font-size: 4.4vw;
+  }
+
+  .upper-half .customer-service {
+    font-size: 2vw;
+  }
+  .upper-half .customer-service .exp-info {
+    font-size: 1.2vw;
+  }
+
+  .upper-half .world-elite {
+    font-size: 3.2vw;
+  }
+
+  .lower-half .card-numbers, .lower-half .exp-date {
+    font-size: 5.2vw;
+  }
+  .lower-half .valid-thru {
+    font-size: 2vw;
+  }
+  .lower-half .name {
+    font-size: 3.6vw;
+  }
+
+  .lower-half .signature-cvv {
+    font-size: 4.8vw;
+  }
+  .lower-half .other-info {
+    font-size: 2vw;
+  }
+}
 
 
 
 
+/* Circles and Arcs BEGIN */
 
-/* Circle and Arcs BEGINS */
-.arc-container, .circle {
+.arc-design-container {
   position: absolute;
   z-index: 2;
+  width: 81%;
+  aspect-ratio: 1 / 1;
+  top: -16%;
+  left: 26%;
 }
-svg.circle {
-  transform-origin: center;
+
+.def-only {
+  width: 0;
+  height: 0;
 }
 
 circle {
@@ -278,17 +314,18 @@ circle {
   opacity: 0.4;
 }
 
-.circle-1 {
-  top: 43px;
-  left: 223px;
+
+#arc_design .arc {
+  transform-origin: center;
 }
-.circle-1 .arc-12 {
+
+#arc_design .arc-12 {
   transform: rotate(135deg);
 }
-.circle-1 .arc-13 {
+#arc_design .arc-13 {
   transform: rotate(193deg);
 }
-.circle-1 .arc-14 {
+#arc_design .arc-14 {
   transform: rotate(265deg);
 }
 #circle_1 .white-line {
@@ -312,14 +349,10 @@ circle {
   transform: rotate(-132deg);
 }
 
-.circle-2 {
-  top: 29px;
-  left: 209px;
-}
-.circle-2 .arc-21 {
+#arc_design .arc-21 {
   transform: rotate(0deg);
 }
-.circle-2 .arc-22 {
+#arc_design .arc-22 {
   transform: rotate(190deg);
 }
 #circle_2 .white-line {
@@ -343,14 +376,10 @@ circle {
   transform: rotate(-21deg);
 }
 
-.circle-3 {
-  top: 15px;
-  left: 192px;
-}
-.circle-3 .arc-31 {
+#arc_design .arc-31 {
   transform: rotate(-70deg);
 }
-.circle-3 .arc-32 {
+#arc_design .arc-32 {
   transform: rotate(115deg);
 }
 #circle_3 .white-line {
@@ -374,14 +403,10 @@ circle {
   transform: rotate(-21deg);
 }
 
-.circle-4 {
-  top: 0;
-  left: 175px;
-}
-.circle-4 .arc-41 {
+#arc_design .arc-41 {
   transform: rotate(-185deg);
 }
-.circle-4 .arc-42 {
+#arc_design .arc-42 {
   transform: rotate(26deg);
 }
 #circle_4 .white-line {
@@ -405,11 +430,7 @@ circle {
   transform: rotate(-21deg);
 }
 
-.circle-5 {
-  top: -15px;
-  left: 161px;
-}
-.circle-5 .arc-51 {
+#arc_design .arc-51 {
   transform: rotate(-40deg);
 }
 #circle_5 .white-line {
@@ -433,31 +454,27 @@ circle {
   transform: rotate(-21deg);
 }
 
-.circle-6 {
-  top: -45px;
-  left: 130px;
-}
-.circle-6 .arc-61 {
-  transform: rotate(-36deg);
+#arc_design .arc-61 {
+  transform: rotate(-90deg);
 }
 #circle_6 .white-line {
-  stroke-dasharray: 900;
-  stroke-dashoffset: -800;
-  transform: rotate(-21deg);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  transform: rotate(-29deg);
 }
 #circle_6 .line-1 {
-  stroke-dasharray: 900;
-  stroke-dashoffset: -820;
-  transform: rotate(-21deg);
+  stroke-dasharray: 1100;
+  stroke-dashoffset: -1021;
+  transform: rotate(-29deg);
 }
 #circle_6 .line-2 {
-  stroke-dasharray: 920;
-  stroke-dashoffset: -840;
-  transform: rotate(-21deg);
+  stroke-dasharray: 1120;
+  stroke-dashoffset: -1042;
+  transform: rotate(-29deg);
 }
 #circle_6 .line-3 {
-  stroke-dasharray: 940;
-  stroke-dashoffset: -861;
-  transform: rotate(-21deg);
+  stroke-dasharray: 1140;
+  stroke-dashoffset: -1063;
+  transform: rotate(-29deg);
 }
 /* Circle and Arcs ENDS */
