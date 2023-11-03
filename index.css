@@ -318,162 +318,129 @@ circle {
   transform-origin: center;
 }
 
+#arc_design .arc-11 {
+  transform: rotate(-5deg);
+}
 #arc_design .arc-12 {
-  transform: rotate(135deg);
+  transform: rotate(125deg);
 }
 #arc_design .arc-13 {
-  transform: rotate(193deg);
+  transform: rotate(183deg);
 }
 #arc_design .arc-14 {
-  transform: rotate(265deg);
+  transform: rotate(255deg);
 }
 #circle_1 .white-line {
-  stroke-dasharray: 600;
-  stroke-dashoffset: -510;
-  transform: rotate(-132deg);
+  stroke-dashoffset: 290;
+  stroke-dasharray: 75.4 527.8;
 }
 #circle_1 .line-1 {
-  stroke-dasharray: 600;
-  stroke-dashoffset: -531;
-  transform: rotate(-132deg);
+  stroke-dashoffset: 302;
+  stroke-dasharray: 78.5 549.8;
 }
 #circle_1 .line-2 {
-  stroke-dasharray: 620;
-  stroke-dashoffset: -552;
-  transform: rotate(-132deg);
+  stroke-dashoffset: 314;
+  stroke-dasharray: 81.7 571.8;
 }
 #circle_1 .line-3 {
-  stroke-dasharray: 640;
-  stroke-dashoffset: -573;
-  transform: rotate(-132deg);
+  stroke-dashoffset: 326;
+  stroke-dasharray: 84.8 593.8;
 }
 
-#arc_design .arc-21 {
-  transform: rotate(0deg);
-}
 #arc_design .arc-22 {
-  transform: rotate(190deg);
+  transform: rotate(193deg);
 }
 #circle_2 .white-line {
-  stroke-dasharray: 600;
-  stroke-dashoffset: -600;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 141;
+  stroke-dasharray: 88 615.7;
 }
 #circle_2 .line-1 {
-  stroke-dasharray: 630;
-  stroke-dashoffset: -622;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 146;
+  stroke-dasharray: 91.1 637.7;
 }
 #circle_2 .line-2 {
-  stroke-dasharray: 650;
-  stroke-dashoffset: -644;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 151;
+  stroke-dasharray: 94.2 659.8;
 }
 #circle_2 .line-3 {
-  stroke-dasharray: 680;
-  stroke-dashoffset: -666;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 156;
+  stroke-dasharray: 97.4 681.7;
 }
 
-#arc_design .arc-31 {
-  transform: rotate(-70deg);
-}
 #arc_design .arc-32 {
-  transform: rotate(115deg);
+  transform: rotate(180deg);
 }
 #circle_3 .white-line {
-  stroke-dasharray: 600;
-  stroke-dashoffset: -580;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 201.1 603.1;
 }
 #circle_3 .line-1 {
-  stroke-dasharray: 600;
-  stroke-dashoffset: -600;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 207.3 622.1;
 }
 #circle_3 .line-2 {
-  stroke-dasharray: 620;
-  stroke-dashoffset: -620;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 213.6 640.9;
 }
 #circle_3 .line-3 {
-  stroke-dasharray: 640;
-  stroke-dashoffset: -640;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 219.9 659.7;
 }
 
-#arc_design .arc-41 {
-  transform: rotate(-185deg);
-}
 #arc_design .arc-42 {
-  transform: rotate(26deg);
+  transform: rotate(218deg);
 }
 #circle_4 .white-line {
-  stroke-dasharray: 800;
-  stroke-dashoffset: -750;
-  transform: rotate(-21deg);
+  stroke-dashoffset: -220;
+  stroke-dasharray: 163.4 741.4;
 }
 #circle_4 .line-1 {
-  stroke-dasharray: 800;
-  stroke-dashoffset: -771;
-  transform: rotate(-21deg);
+  stroke-dashoffset: -226;
+  stroke-dasharray: 167.9 762;
 }
 #circle_4 .line-2 {
-  stroke-dasharray: 820;
-  stroke-dashoffset: -792;
-  transform: rotate(-21deg);
+  stroke-dashoffset: -232;
+  stroke-dasharray: 172.4 782.6;
 }
 #circle_4 .line-3 {
-  stroke-dasharray: 840;
-  stroke-dashoffset: -813;
-  transform: rotate(-21deg);
+  stroke-dashoffset: -238;
+  stroke-dasharray: 177 803.2;
 }
 
-#arc_design .arc-51 {
-  transform: rotate(-40deg);
-}
 #circle_5 .white-line {
-  stroke-dasharray: 900;
-  stroke-dashoffset: -800;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 370;
+  stroke-dasharray: 209.4 795.9;
 }
 #circle_5 .line-1 {
-  stroke-dasharray: 900;
-  stroke-dashoffset: -820;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 379;
+  stroke-dasharray: 214.7 815.7;
 }
 #circle_5 .line-2 {
-  stroke-dasharray: 920;
-  stroke-dashoffset: -840;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 388;
+  stroke-dasharray: 219.9 835.7;
 }
 #circle_5 .line-3 {
-  stroke-dasharray: 940;
-  stroke-dashoffset: -861;
-  transform: rotate(-21deg);
+  stroke-dashoffset: 397;
+  stroke-dasharray: 225.1 855.6;
 }
 
 #arc_design .arc-61 {
   transform: rotate(-90deg);
 }
 #circle_6 .white-line {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: -1000;
-  transform: rotate(-29deg);
+  stroke-dashoffset: 300;
+  stroke-dasharray: 248.7 945.1;
 }
 #circle_6 .line-1 {
-  stroke-dasharray: 1100;
-  stroke-dashoffset: -1021;
-  transform: rotate(-29deg);
+  stroke-dashoffset: 300;
+  stroke-dasharray: 253.9 965;
 }
 #circle_6 .line-2 {
-  stroke-dasharray: 1120;
-  stroke-dashoffset: -1042;
-  transform: rotate(-29deg);
+  stroke-dashoffset: 300;
+  stroke-dasharray: 259.2 984.9;
 }
 #circle_6 .line-3 {
-  stroke-dasharray: 1140;
-  stroke-dashoffset: -1063;
-  transform: rotate(-29deg);
+  stroke-dashoffset: 300;
+  stroke-dasharray: 264.4 1004.8;
 }
 /* Circle and Arcs ENDS */
