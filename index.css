@@ -11,11 +11,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-}
-
 h1, p {
   margin: 6px auto;
   text-align: center;
@@ -58,7 +53,6 @@ h1, p {
   width: 100%;
   height: 100%;
   border-radius: 3% / 5%;
-  background: radial-gradient(circle at 65%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -73,9 +67,14 @@ h1, p {
   left: 0;
   width: 100%;
   height: 50%;
-  border-radius: 0 0 3% / 5% 3% / 5%;
-  background: radial-gradient(circle at 65% 0%, #17b796, #087742 30%, #0a3538 60%);
   overflow: hidden;
+}
+
+.card-front {
+  background: radial-gradient(circle at 65%, #1caee2, #3c82d2 25%, #1c2d6a 60%);
+}
+.card-front:after {
+  background: radial-gradient(circle at 65% 0%, #17b796, #087742 30%, #0a3538 60%);
 }
 
 .card-back {
